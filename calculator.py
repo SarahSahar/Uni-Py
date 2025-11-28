@@ -7,15 +7,18 @@ def calc(a, op, b):
         return a * b
     elif op == '/':
         return a / b
+    elif op == '^':
+        return a ** b
     else:
-        return "Error"
+        return "your operation is false!!!"
 
 while True:
     a = int(input("First number: "))
     op = input("Operator: ")
     b = int(input("Second number: "))
     
-    print("Result:", calc(a, op, b))
-    
+    result = calc(a, op, b)
+    print("Result:", result)
+
     if input("Continue? (y/n): ").lower() != 'y':
         break
