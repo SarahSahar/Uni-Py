@@ -4,11 +4,7 @@ def convert_age(age):
     minutes = hours * 60
     seconds = minutes * 60
     
-    print(f"سن: {age} سال")
-    print(f"برحسب روز: {days} روز")
-    print(f"برحسب ساعت: {hours} ساعت")
-    print(f"برحسب دقیقه: {minutes} دقیقه")
-    print(f"برحسب ثانیه: {seconds} ثانیه")
+    print(f"{hours} hour, {minutes} minute, {seconds} second")
 
-age = int(input("سن خود را وارد کنید: "))
+age = int(input("Enter your age: "))
 convert_age(age)
